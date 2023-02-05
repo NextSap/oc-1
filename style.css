@@ -1,0 +1,410 @@
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("assets/font/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url("assets/font/Raleway-Bold.ttf");
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Raleway-Regular;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header img {
+    margin-left: 2%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    width: 380px;
+    margin-right: 3%;
+}
+
+header nav h1 a {
+    border-top: white solid 3px;
+    padding: 38px;
+    cursor: pointer;
+}
+
+header nav h1 a:hover{
+    border-top: #0065FC solid 3px;
+    color: #0065FC;
+}
+
+entitled {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 1.5%;
+}
+
+entitled h1 {
+    margin: 0;
+    font-size: 20px;
+    font-family: Raleway-Bold;
+}
+
+entitled h2 {
+    margin: 8px 0 0;
+    font-size: 16px;
+    color: dimgray;
+}
+
+search {
+    display: flex;
+    margin-left: 1.5%;
+    margin-top: 25px;
+}
+
+search i {
+    margin: 0;
+    font-size: 20px;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #E7E6E6;
+}
+
+search input {
+    margin: 0;
+    padding: 11px;
+    font-size: 16px;
+    border: #E7E6E6 solid 1px;
+}
+
+search button {
+    font-size: 16px;
+    width: 120px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    font-family: Raleway-Bold;
+}
+
+search button:hover {
+    background-color: #1875FF;
+    cursor: pointer;
+}
+
+filters {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5%;
+    margin-top: 40px;
+    height: 45px;
+}
+
+filters h1 {
+    font-size: 20px;
+    font-family: Raleway-Bold;
+}
+
+filters container {
+    display: flex;
+    align-items: center;
+    border: #E7E6E6 solid 2px;
+    border-left: none;
+    height: 45px;
+    border-radius: 50px;
+    margin-left: 2%;
+}
+
+filters container logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+filters container h2 {
+    font-size: 20px;
+    margin-right: 25px;
+    font-family: Raleway-Bold;
+}
+
+filters container h2:hover {
+    color: #0065FC;
+    cursor: pointer;
+}
+
+filters container logo i {
+    font-size: 20px;
+    color: #0065FC;
+}
+
+informations {
+    display: flex;
+    align-items: center;
+    height: 27px;
+    margin-left: 1.5%;
+    margin-top: 40px;
+}
+
+informations container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border: #DEEBFF solid 1px;
+    border-radius: 50px;
+}
+
+informations container i {
+    font-size: 13px;
+    color: #0065FC;
+}
+
+informations h2 {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+accomodations {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 60%;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 1.5%;
+}
+
+accomodations h1 {
+    margin: 0;
+    font-size: 18px;
+    font-family: Raleway-Bold;
+    padding: 30px;
+}
+
+accomodations container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+}
+
+accomodations container accomodation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 25%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #A9A9A9;
+}
+
+accomodations container accomodation img {
+    height: 100%;
+    width: 95%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 5px;
+    object-fit: cover;
+}
+
+accomodations container accomodation div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    width: 80%;
+    margin-top: 5px;
+}
+
+accomodations container accomodation div h1, h2 {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+accomodations container accomodation div stars i {
+    color: #0065FC;
+}
+
+populars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    margin: 30px 1.5% 0 1.5%;
+    width: 30%;
+    gap: 40px;
+}
+
+populars h1 {
+    margin: 0;
+    font-size: 18px;
+    font-family: Raleway-Bold;
+}
+
+populars accomodation {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 85%;
+    background-color: white;
+    box-shadow: 5px 5px 5px #A9A9A9;
+    border-radius: 30px;
+}
+
+populars accomodation h1 {
+    padding: 0;
+}
+
+populars accomodation img {
+    height: 140px;
+    width: 50%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-left: 5px;
+    object-fit: cover;
+}
+
+populars accomodation div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 90%;
+    width: 80%;
+    margin-left: 15px;
+}
+
+populars accomodation div text {
+    display: flex;
+    flex-direction: column;
+}
+
+populars accomodation div text h2 {
+    margin-top: 10px;
+}
+
+populars accomodation div stars i {
+    color: #0065FC;
+}
+
+activities {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+activities container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+    gap: 30px
+}
+
+activities h1 {
+    margin: 0;
+    font-size: 18px;
+    font-family: Raleway-Bold;
+}
+
+activities activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #A9A9A9;
+}
+
+activities activity h1 {
+    font-size: 15px;
+    font-family: Raleway;
+    padding: 10px;
+}
+
+activities activity img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 280px;
+    object-fit: cover;
+}
+
+.small-activity img {
+    height: 155px;
+}
+
+.medium-activity img {
+    height: 275px;
+}
+
+.large-activity img {
+    height: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    height: 250px;
+}
+
+footer h1 {
+    font-size: 18px;
+    font-family: Raleway-Bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+footer h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+footer h2:hover {
+    text-decoration: underline;
+}
+
+footer about, accomodation, help {
+    width: 25%;
+    background-color: #F2F2F2;
+}
