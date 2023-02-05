@@ -50,7 +50,7 @@ header nav h1 a {
     cursor: pointer;
 }
 
-header nav h1 a:hover{
+header nav h1 a:hover {
     border-top: #0065FC solid 3px;
     color: #0065FC;
 }
@@ -90,6 +90,7 @@ search i {
 }
 
 search input {
+    width: 200px;
     margin: 0;
     padding: 11px;
     font-size: 16px;
@@ -211,7 +212,7 @@ accomodations h1 {
     padding: 30px;
 }
 
-accomodations container {
+accomodations section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +221,7 @@ accomodations container {
     gap: 40px;
 }
 
-accomodations container accomodation {
+accomodations section accomodation {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,7 +232,7 @@ accomodations container accomodation {
     box-shadow: 5px 5px 5px #A9A9A9;
 }
 
-accomodations container accomodation img {
+accomodations section accomodation img {
     height: 100%;
     width: 95%;
     border-top-left-radius: 25px;
@@ -240,7 +241,7 @@ accomodations container accomodation img {
     object-fit: cover;
 }
 
-accomodations container accomodation div {
+accomodations section accomodation div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -249,13 +250,13 @@ accomodations container accomodation div {
     margin-top: 5px;
 }
 
-accomodations container accomodation div h1, h2 {
+accomodations section accomodation div h1, h2 {
     font-size: 14px;
     padding: 0;
     margin: 0;
 }
 
-accomodations container accomodation div stars i {
+accomodations section accomodation div stars i {
     color: #0065FC;
 }
 
@@ -277,7 +278,14 @@ populars h1 {
     font-family: Raleway-Bold;
 }
 
-populars accomodation {
+populars section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+populars section accomodation {
     display: flex;
     align-items: center;
     height: 150px;
@@ -287,11 +295,11 @@ populars accomodation {
     border-radius: 30px;
 }
 
-populars accomodation h1 {
+populars section accomodation h1 {
     padding: 0;
 }
 
-populars accomodation img {
+populars section accomodation img {
     height: 140px;
     width: 50%;
     border-top-left-radius: 25px;
@@ -300,7 +308,7 @@ populars accomodation img {
     object-fit: cover;
 }
 
-populars accomodation div {
+populars section accomodation div {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -309,16 +317,16 @@ populars accomodation div {
     margin-left: 15px;
 }
 
-populars accomodation div text {
+populars section accomodation div text {
     display: flex;
     flex-direction: column;
 }
 
-populars accomodation div text h2 {
+populars section accomodation div text h2 {
     margin-top: 10px;
 }
 
-populars accomodation div stars i {
+populars section accomodation div stars i {
     color: #0065FC;
 }
 
@@ -407,4 +415,194 @@ footer h2:hover {
 footer about, accomodation, help {
     width: 25%;
     background-color: #F2F2F2;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1245px) {
+    filters {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    filters container {
+        flex-direction: row;
+    }
+
+    container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    accomodations {
+        width: 100%;
+        margin: 30px 1.5% 0 0;
+    }
+
+    accomodations section {
+        width: 100%;
+    }
+
+    accomodations section accomodation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        width: 45%;
+    }
+
+    accomodations section accomodation img {
+        height: 100%;
+        width: 97%;
+    }
+
+    accomodations section accomodation div {
+        height: 70%;
+    }
+
+    populars {
+        margin: 40px 0 0 0;
+        order: -1;
+        height: 240px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    populars section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+
+    populars section accomodation {
+        width: 30%;
+    }
+
+    activities {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    activities h1 {
+        margin: 0 0 20px 2%;
+    }
+
+    activities container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        gap: 30px;
+    }
+
+    activities activity {
+        height: 200px;
+        width: 45%;
+    }
+
+    activities activity h1 {
+        margin: 0;
+    }
+
+    .large-activity img, .medium-activity img, .small-activity img {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    filters {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    filters container {
+        flex-direction: row;
+    }
+
+    container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    accomodations {
+        width: 100%;
+        margin: 30px 1.5% 0 0;
+    }
+
+    accomodations section {
+        width: 100%;
+    }
+
+    accomodations section accomodation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        width: 45%;
+    }
+
+    accomodations section accomodation img {
+        height: 100%;
+        width: 97%;
+    }
+
+    accomodations section accomodation div {
+        height: 70%;
+    }
+
+    populars {
+        margin: 40px 0 0 0;
+        order: -1;
+        height: 240px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    populars section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+
+    populars section accomodation {
+        width: 30%;
+    }
+
+    activities {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    activities h1 {
+        margin: 0 0 20px 2%;
+    }
+
+    activities container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        gap: 30px;
+    }
+
+    activities activity {
+        height: 200px;
+        width: 45%;
+    }
+
+    activities activity h1 {
+        margin: 0;
+    }
+
+    .large-activity img, .medium-activity img, .small-activity img {
+        height: 80%;
+        width: 100%;
+    }
 }
