@@ -54,7 +54,11 @@ header nav a {
     cursor: pointer;
 }
 
-header nav h1 a:hover {
+header nav p {
+    font-size: 16px;
+}
+
+header nav p a:hover {
     border-top: #0065FC solid 3px;
     color: #0065FC;
 }
@@ -84,7 +88,7 @@ header nav h1 a:hover {
     margin-top: 25px;
 }
 
-.search i {
+.search #search_icon {
     margin: 0;
     font-size: 20px;
     padding: 15px;
@@ -101,7 +105,10 @@ header nav h1 a:hover {
     border: #E7E6E6 solid 1px;
 }
 
-.search button {
+.search div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     width: 120px;
     background-color: #0065FC;
@@ -111,9 +118,14 @@ header nav h1 a:hover {
     font-family: Raleway-Bold, sans-serif;
 }
 
-.search button:hover {
+.search div:hover {
     background-color: #1875FF;
     cursor: pointer;
+}
+
+.search div i {
+    position: absolute;
+    visibility: hidden;
 }
 
 .filters {
@@ -129,7 +141,7 @@ header nav h1 a:hover {
     font-family: Raleway-Bold, sans-serif;
 }
 
-.filters div {
+.filters .filter {
     display: flex;
     align-items: center;
     border: #E7E6E6 solid 2px;
@@ -139,7 +151,7 @@ header nav h1 a:hover {
     margin-left: 2%;
 }
 
-.filters div logo {
+.filters .filter div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,23 +162,23 @@ header nav h1 a:hover {
     margin-right: 10px;
 }
 
-.filters div h2 {
+.filters .filter h2 {
     font-size: 20px;
     margin-right: 25px;
     font-family: Raleway-Bold, sans-serif;
 }
 
-.filters div h2:hover {
+.filters .filter h2:hover {
     color: #0065FC;
     cursor: pointer;
 }
 
-.filters div logo i {
+.filters .filter div i {
     font-size: 20px;
     color: #0065FC;
 }
 
-informations {
+.informations {
     display: flex;
     align-items: center;
     height: 27px;
@@ -174,7 +186,7 @@ informations {
     margin-top: 40px;
 }
 
-informations container {
+.informations div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,12 +196,12 @@ informations container {
     border-radius: 50px;
 }
 
-informations container i {
+.informations div i {
     font-size: 13px;
     color: #0065FC;
 }
 
-informations h2 {
+.informations h2 {
     font-size: 18px;
     margin-left: 10px;
 }
@@ -209,11 +221,16 @@ main {
     margin-left: 1.5%;
 }
 
-.accomodations h1 {
+.accomodations h2 {
     margin: 0;
     font-size: 18px;
     font-family: Raleway-Bold, sans-serif;
     padding: 30px;
+}
+
+.accomodations .clickable:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .accomodations .accomodations_container {
@@ -234,10 +251,11 @@ main {
     background-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #A9A9A9;
+    cursor: pointer;
 }
 
 .accomodations .accomodations_container article img {
-    height: 100%;
+    height: 60%;
     width: 95%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -249,7 +267,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 80%;
+    height: 40%;
     width: 80%;
     margin-top: 5px;
 }
@@ -260,7 +278,7 @@ main {
     height: auto;
 }
 
-.accomodations .accomodations_container article div h1, h2 {
+.accomodations .accomodations_container article div h2, h3 {
     font-size: 16px;
     padding: 0;
     margin: 0;
@@ -278,10 +296,14 @@ main {
     gap: 40px;
 }
 
-.populars h1 {
+.populars h2 {
     margin: 0;
     font-size: 18px;
     font-family: Raleway-Bold, sans-serif;
+}
+
+.populars h2 {
+    font-size: 16px;
 }
 
 .populars .populars_container {
@@ -299,15 +321,17 @@ main {
     background-color: white;
     box-shadow: 5px 5px 5px #A9A9A9;
     border-radius: 30px;
+    cursor: pointer;
 }
 
-.populars .populars_container article h1 {
-    padding: 0;
+.populars .populars_container article h3 {
+    font-size: 15px;
 }
 
 .populars .populars_container article img {
     height: 140px;
-    width: 50%;
+    width: 35%;
+    min-width: 35%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     margin-left: 5px;
@@ -319,8 +343,8 @@ main {
     justify-content: space-around;
     flex-direction: column;
     height: 90%;
-    width: 80%;
-    margin-left: 15px;
+    width: 65%;
+    margin-left: 10px;
 }
 
 .populars .populars_container article div .text {
@@ -353,7 +377,7 @@ main {
     gap: 30px
 }
 
-.activities h1 {
+.activities h2 {
     margin: 0;
     font-size: 18px;
     font-family: Raleway-Bold, sans-serif;
@@ -365,9 +389,10 @@ main {
     align-items: center;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #A9A9A9;
+    cursor: pointer;
 }
 
-.activities article h1 {
+.activities article h2 {
     font-size: 15px;
     font-family: Raleway, sans-serif;
     padding: 10px;
@@ -399,21 +424,21 @@ footer {
     height: 250px;
 }
 
-footer h1 {
+footer h2 {
     font-size: 18px;
     font-family: Raleway-Bold, sans-serif;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-footer h2 {
+footer h3 {
     font-size: 16px;
     margin-bottom: 10px;
     cursor: pointer;
     font-weight: normal;
 }
 
-footer h2:hover {
+footer h3:hover {
     text-decoration: underline;
 }
 
@@ -422,14 +447,14 @@ footer section {
     background-color: #F2F2F2;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1245px) {
+@media screen and (min-width: 770px) and (max-width: 1245px) {
     .filters {
         height: auto;
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    .filters div {
+    .filters .filter {
         flex-direction: row;
     }
 
@@ -456,12 +481,12 @@ footer section {
     }
 
     .accomodations .accomodations_container article img {
-        height: 100%;
+        height: 60%;
         width: 97%;
     }
 
     .accomodations .accomodations_container article div {
-        height: 70%;
+        height: 40%;
         font-size: 15px;
     }
 
@@ -518,7 +543,7 @@ footer section {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 770px) {
     header {
         height: 150px;
         flex-direction: column;
@@ -531,32 +556,63 @@ footer section {
 
     header nav {
         width: 100%;
+        margin: 0;
     }
 
-    header nav h1 a {
-        border-top: none;
-        width: 100%;
-        padding-bottom: 30px;
-    }
-
-    header nav h1 {
-        width: 100%;
-    }
-
-    header {
+    header nav p {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        height: 100px;
+        width: 100%;
+        height: 50px;
+        border-bottom: #F2F2F2 solid;
     }
 
-    header img {
-        margin-left: 2%;
+    header nav p:hover {
+        border-bottom: #0065FC solid;
+        color: #0065FC;
     }
 
-    header nav h1 a:hover {
+
+    header nav p a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-top: none;
-        border-bottom: #0065FC solid 3px;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    header nav p a:hover {
+        border-top: none;
+    }
+
+    .search {
+        justify-content: center;
+        width: 95%;
+    }
+
+    .search #search_icon {
+        width: 15px;
+    }
+
+    .search input {
+        width: 75%;
+    }
+
+    .search div {
+        width: 20%;
+    }
+
+    .search div p {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .search div i {
+        position: relative;
+        visibility: visible;
     }
 
     .filters {
@@ -565,8 +621,12 @@ footer section {
         gap: 10px;
     }
 
-    .filters div {
+    .filters .filter {
         flex-direction: row;
+    }
+
+    .filters .filter h2 {
+        font-size: 16px;
     }
 
     main {
@@ -591,12 +651,12 @@ footer section {
     }
 
     .accomodations .accomodations_container article img {
-        height: 100%;
+        height: 60%;
         width: 97%;
     }
 
     .accomodations .accomodations_container article div {
-        height: 70%;
+        height: 40%;
     }
 
     .populars {
@@ -654,6 +714,6 @@ footer section {
 
     footer section {
         margin-left: 5%;
-        width: 100%;
+        width: 95%;
     }
 }
