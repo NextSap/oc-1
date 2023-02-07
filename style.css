@@ -8,6 +8,10 @@
     src: url("assets/font/Raleway-Bold.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -91,10 +95,10 @@ header nav p a:hover {
     display: flex;
     margin-left: 1.5%;
     margin-top: 25px;
+    height: 50px;
 }
 
 .search #search_icon {
-    margin: 0;
     font-size: 20px;
     padding: 15px;
     border-top-left-radius: 8px;
@@ -195,6 +199,8 @@ header nav p a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 25px;
+    min-width: 25px;
     height: 25px;
     width: 25px;
     border: #DEEBFF solid 1px;
@@ -659,7 +665,7 @@ footer section {
 
     .search {
         justify-content: center;
-        width: 95%;
+        width: 98%;
     }
 
     .search #search_icon {
@@ -671,7 +677,7 @@ footer section {
     }
 
     .search div {
-        width: 20%;
+        width: 10%;
     }
 
     .search div p {
