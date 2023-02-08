@@ -199,8 +199,6 @@ header nav p a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 25px;
-    min-width: 25px;
     height: 25px;
     width: 25px;
     border: #DEEBFF solid 1px;
