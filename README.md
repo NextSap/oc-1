@@ -1,2 +1,2 @@
-# oc-2
-Openclassrooms second projet
+# oc-1
+Openclassrooms first projet
