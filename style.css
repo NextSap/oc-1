@@ -39,6 +39,10 @@ a {
     padding-bottom: 15px;
 }
 
+.fa-solid.fa-star.grey {
+    color: #CBCBCB;
+}
+
 header {
     display: flex;
     justify-content: space-between;
