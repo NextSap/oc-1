@@ -63,13 +63,10 @@ header nav a {
     border-top: white solid 3px;
     padding: 38px;
     cursor: pointer;
-}
-
-header nav p {
     font-size: 16px;
 }
 
-header nav p a:hover {
+header nav a:hover {
     border-top: #0065FC solid 3px;
     color: #0065FC;
 }
@@ -115,7 +112,7 @@ header nav p a:hover {
     border: #E7E6E6 solid 1px;
 }
 
-.search div {
+.search button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,12 +125,12 @@ header nav p a:hover {
     font-family: Raleway-Bold, sans-serif;
 }
 
-.search div:hover {
+.search button:hover {
     background-color: #1875FF;
     cursor: pointer;
 }
 
-.search div i {
+.search button i {
     position: absolute;
     visibility: hidden;
 }
@@ -239,6 +236,10 @@ main {
 }
 
 .accomodations .clickable {
+    margin: 0;
+    font-size: 22px;
+    font-family: Raleway-Bold, sans-serif;
+    padding: 20px;
     width: 115px;
     font-size: 18px;
 }
@@ -257,7 +258,7 @@ main {
     gap: 40px;
 }
 
-.accomodations .accomodations_container a {
+.accomodations .accomodations_container article {
     height: 225px;
     width: 26%;
     background-color: white;
@@ -266,7 +267,7 @@ main {
     cursor: pointer;
 }
 
-.accomodations .accomodations_container a article {
+.accomodations .accomodations_container article a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,7 +275,7 @@ main {
     width: 100%;
 }
 
-.accomodations .accomodations_container a article img {
+.accomodations .accomodations_container article a img {
     height: 50%;
     min-height: 50%;
     width: 95%;
@@ -284,7 +285,7 @@ main {
     object-fit: cover;
 }
 
-.accomodations .accomodations_container a article div {
+.accomodations .accomodations_container article a div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -293,14 +294,14 @@ main {
     width: 90%;
 }
 
-.accomodations .accomodations_container a article div .title {
+.accomodations .accomodations_container article a div .title {
     width: 95%;
     height: 50%;
     min-height: 0;
     margin-top: 10px;
 }
 
-.accomodations .accomodations_container a article div .stars {
+.accomodations .accomodations_container article a div .stars {
     flex-direction: row;
     justify-content: left;
     height: auto;
@@ -308,7 +309,7 @@ main {
 }
 
 
-.accomodations .accomodations_container a article div .title h2 {
+.accomodations .accomodations_container article a div .title h2 {
     font-size: 16px;
     padding: 0;
     margin: 0;
@@ -317,7 +318,7 @@ main {
     font-family: Raleway-Bold, sans-serif;
 }
 
-.accomodations .accomodations_container a article div .title h3 {
+.accomodations .accomodations_container article a div .title h3 {
     font-size: 14px;
     font-weight: 400;
     padding: 0;
@@ -359,7 +360,7 @@ main {
     gap: 25px;
 }
 
-.populars .populars_container a {
+.populars .populars_container article {
     height: 150px;
     width: 85%;
     background-color: white;
@@ -368,14 +369,14 @@ main {
     cursor: pointer;
 }
 
-.populars .populars_container a article {
+.populars .populars_container article a {
     display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
 }
 
-.populars .populars_container a article img {
+.populars .populars_container article a img {
     height: 140px;
     width: 40%;
     min-width: 35%;
@@ -385,7 +386,7 @@ main {
     object-fit: cover;
 }
 
-.populars .populars_container a article div {
+.populars .populars_container article a div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -394,14 +395,14 @@ main {
     margin-left: 5px;
 }
 
-.populars .populars_container a article div .title {
+.populars .populars_container article a div .title {
     justify-content: normal;
     height: auto;
     width: 95%;
     margin-top: 10px;
 }
 
-.populars .populars_container a article .title h2 {
+.populars .populars_container article a .title h2 {
     font-size: 16px;
     padding: 0;
     margin: 0;
@@ -409,14 +410,14 @@ main {
     font-family: Raleway-Bold, sans-serif;
 }
 
-.populars .populars_container a article .title h3 {
+.populars .populars_container article a .title h3 {
     font-size: 15px;
     font-weight: 400;
     padding: 0;
     margin: 10px 0 0 0;
 }
 
-.populars .populars_container a article div .stars {
+.populars .populars_container article a div .stars {
     flex-direction: row;
     justify-content: left;
     height: 25px;
@@ -446,11 +447,11 @@ main {
     gap: 30px;
 }
 
-.activities .activities_container a {
+.activities .activities_container article {
     width: 20%;
 }
 
-.activities .activities_container a article {
+.activities .activities_container article a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,12 +460,12 @@ main {
     cursor: pointer;
 }
 
-.activities .activities_container a article h2 {
+.activities .activities_container article a h2 {
     font-size: 14px;
     font-family: Raleway, sans-serif;
 }
 
-.activities .activities_container a article img {
+.activities .activities_container article a img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
@@ -497,18 +498,20 @@ footer h2 {
     margin-bottom: 15px;
 }
 
-footer h3 {
+footer a {
     font-size: 16px;
     margin-bottom: 10px;
     cursor: pointer;
     font-weight: normal;
 }
 
-footer h3:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
 footer section {
+    display: flex;
+    flex-direction: column;
     width: 25%;
     background-color: #F2F2F2;
 }
@@ -546,17 +549,17 @@ footer section {
         width: 45%;
     }
 
-    .accomodations .accomodations_container a article {
+    .accomodations .accomodations_container article a {
         height: 100%;
         width: 100%;
     }
 
-    .accomodations .accomodations_container a article img {
+    .accomodations .accomodations_container article a img {
         height: 60%;
         width: 97%;
     }
 
-    .accomodations .accomodations_container a article div {
+    .accomodations .accomodations_container article a div {
         height: 40%;
         font-size: 15px;
     }
@@ -575,11 +578,11 @@ footer section {
         gap: 0;
     }
 
-    .populars .populars_container a {
+    .populars .populars_container article {
         width: 30%;
     }
 
-    .populars .populars_container a article {
+    .populars .populars_container article a {
         width: 100%;
     }
 
@@ -602,21 +605,21 @@ footer section {
         gap: 30px;
     }
 
-    .activities .activities_container a {
+    .activities .activities_container article {
         height: 200px;
         width: 45%;
     }
 
-    .activities .activities_container a article {
+    .activities .activities_container article a {
         height: 100%;
         width: 100%;
     }
 
-    .activities .activities_container a article h2 {
+    .activities .activities_container article a h2 {
         margin: auto;
     }
 
-    .activities .activities_container a article img {
+    .activities .activities_container article a img {
         height: 80%;
         width: 100%;
     }
@@ -638,32 +641,20 @@ footer section {
         margin: 0;
     }
 
-    header nav p {
+    header nav a {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
         height: 50px;
         border-bottom: #F2F2F2 solid;
+        padding: 5px;
     }
 
-    header nav p:hover {
+    header nav a:hover {
+        border-top: none;
         border-bottom: #0065FC solid;
         color: #0065FC;
-    }
-
-    header nav p a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: none;
-        padding: 5px;
-        width: 100%;
-        height: 100%;
-    }
-
-    header nav p a:hover {
-        border-top: none;
     }
 
     .search {
@@ -679,16 +670,16 @@ footer section {
         width: 75%;
     }
 
-    .search div {
+    .search button {
         width: 10%;
     }
 
-    .search div p {
+    .search button span {
         position: absolute;
         visibility: hidden;
     }
 
-    .search div i {
+    .search button i {
         position: relative;
         visibility: visible;
     }
@@ -721,23 +712,23 @@ footer section {
         width: 100%;
     }
 
-    .accomodations .accomodations_container a {
+    .accomodations .accomodations_container article {
         flex-direction: column;
         height: 250px;
         width: 95%;
     }
 
-    .accomodations .accomodations_container a article {
+    .accomodations .accomodations_container article a {
         height: 100%;
         width: 100%;
     }
 
-    .accomodations .accomodations_container a article img {
+    .accomodations .accomodations_container article a img {
         height: 60%;
         width: 97%;
     }
 
-    .accomodations .accomodations_container a article div {
+    .accomodations .accomodations_container article a div {
         height: 40%;
     }
 
@@ -757,11 +748,11 @@ footer section {
         gap: 20px;
     }
 
-    .populars .populars_container a {
+    .populars .populars_container article {
         width: 95%;
     }
 
-    .populars .populars_container a article {
+    .populars .populars_container article a {
         width: 100%;
     }
 
@@ -778,24 +769,24 @@ footer section {
         height: auto;
     }
 
-    .activities .activities_container a {
+    .activities .activities_container article {
         height: 200px;
         width: 90%;
     }
 
-    .activities .activities_container a article {
+    .activities .activities_container article a {
         display: flex;
         height: 100%;
         width: 100%;
 
     }
 
-    .activities .activities_container a article img {
+    .activities .activities_container article a img {
         height: 80%;
         width: 100%;
     }
 
-    .activities .activities_container a article h2 {
+    .activities .activities_container article a h2 {
         margin: auto;
     }
 
